@@ -1,0 +1,440 @@
+@font-face {
+	font-family: 'Gagalinregular';
+	src: url('../fonts/Gagalin-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lifehackmedium';
+	src: url('../fonts/Lifehack-Medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu-b-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-b-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu-l-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-l-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu-m-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-m-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/ubuntu-r-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-r-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: visible; 
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; 
+}
+
+h1,
+h2,
+h3 {
+margin: 0;
+padding: 0; 
+}
+
+.wrapper {
+height: 100%;
+margin: 0 auto; 
+}
+  
+.maincontent {
+height: 100%;
+min-height: 650px; 
+}
+    
+.screen {
+min-height: 100vh;
+margin: 0 auto; 
+}
+    
+/* • Секция тянется на всю высоту окна
+• Минимальный размер секции по высоте - 650px */
+
+.container {
+max-width: 1100px;
+margin: 0 auto;
+display: -webkit-box;
+display: flex;
+min-height: 650px; 
+}
+    
+.main_section {
+background-color: black;
+background-image: url(../img/1screen/video-bg.ong);
+background-repeat: no-repeat;
+background-size: cover; 
+}
+    
+.main_section__container {
+height: 100vh;
+min-height: 650px;
+display: -webkit-box;
+display: flex;
+flex-direction: column; 
+}
+
+.header {
+display: -webkit-box;
+display: flex;
+justify-content: space-around;
+align-items: flex-start; 
+}
+    
+.header__navigation {
+display: -webkit-box;
+display: flex;
+align-items: flex-end; 
+}
+    
+.nav__list {
+display: -webkit-box;
+display: flex; 
+}
+
+.nav__list .nav__item {
+display: -webkit-box;
+display: flex;
+font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+font-size: 0.81rem;
+font-weight: 500;
+color: #fff;
+text-transform: uppercase; 
+}
+
+.nav__list .nav__item:after {
+content: "•";
+display: block;
+color: #fff; 
+}
+
+.nav__list .nav__item:last-child:after {
+content: "";
+display: block;
+color: #fff; 
+}
+
+nav__list .nav__item-link {
+color: #fff;
+margin: 0 13px;
+}
+
+.nav__list .nav__item-link:hover {
+color: #aaa; 
+}
+
+.main-section__button {
+  padding-left: 3px; 
+}
+
+.main-section__send-button {
+  background-color: #e45028;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  text-transform: uppercase;
+  transition: .5s;
+  padding: 10px; 
+}
+
+.main-section__send-button:hover {
+  background-color: #c1401e;
+  cursor: pointer; 
+}
+    
+    .main_section__content {
+      display: -webkit-box;
+      display: flex;
+      align-items: center; 
+    }
+    
+    .main_section__content-pic {
+      width: 451px;
+      height: 425px;
+      position: relative;
+      margin-left: -40px; 
+    }
+
+      .main_section__content-pic:after {
+        content: "";
+        display: block;
+        width: 417px;
+        height: 424px;
+        position: absolute;
+        top: -62px;
+        left: 30px; }
+    
+    .main_section__content-title {
+      font-family: 'Gagalinregular', Arial, Helvetica, sans-serif;
+      font-size: 4.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #f9b43b;
+      margin-top: -50px; 
+    }
+
+      .main_section__content-title .main_section__content-text {
+        font-family: 'Lifehackmedium', Arial, Helvetica, sans-serif;
+        text-transform: lowercase;
+        font-size: 4rem;
+        color: #fff;
+        font-style: italic;
+        font-weight: 400;
+        padding-top: 15px;
+      }
+
+    .main_section__arrow {
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-image: url(../img/1screen/scrolldown.png);
+      background-repeat: no-repeat;
+      margin: auto; 
+    }
+    
+    .second_section {
+      background-color: #fff;
+      background-image: url(../img/2screen/bg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+    }
+
+    .second_section__container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; 
+            }
+    
+    .second_section__title-text {
+      font-family: 'Gagalinregular', Arial, Helvetica, sans-serif;
+      font-size: 4.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #2f3234;
+      text-align: center;
+      margin-top: -50px; 
+    }
+    
+    .second_section__list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      }
+
+      .second_section__list .second_section__item {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin: 0 22px;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+      }
+    
+    .second_section__item-img {
+      width: 185px;
+      min-height: 150px; }
+    
+    .second_section__item-img_meat {
+      background-image: url(../img/2screen/meat.png);
+      background-repeat: no-repeat;
+      background-position: center; }
+    
+    .second_section__item-img_hand {
+      background-image: url(../img/2screen/hand.png);
+      background-repeat: no-repeat;
+      background-position: center; }
+    
+    .second_section__item-img_natural {
+      background-image: url(../img/2screen/natural.png);
+      background-repeat: no-repeat;
+      background-position: center; }
+    
+    .second_section__item-title {
+      text-align: center;
+      vertical-align: baseline;
+      font-family: 'Lifehackmedium', Arial, Helvetica, sans-serif;
+      font-size: 1.5rem; }
+    
+    .second_section__item-content {
+      font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+      color: rgba(47, 50, 52, 0.8);
+      font-size: 0.8rem;
+      text-align: justify;
+      line-height: 24px; 
+    }
+    
+    .comments_sections {
+      display: -webkit-box;
+      display: flex;
+      background-color: #333;
+      height: 100vh; 
+    }
+    
+    .comments_sections__list {
+      width: 100%;
+      display: -webkit-box;
+      display: flex;
+      margin: 0;
+      padding: 0; 
+    }
+
+      .comments_sections__list .comments_sections__item {
+        position: relative;
+        height: 50%; 
+      }
+
+        .comments_sections__list .comments_sections__item:hover .comments_sections__content {
+          opacity: 1; 
+        }
+
+        .comments_sections__list .comments_sections__item:hover:before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(69, 69, 69, 0.7);
+          position: absolute;
+          top: 0; 
+        }
+
+    
+    .comments_section__img {
+      width: 100%;
+      height: 100%; 
+    }
+
+    
+    .comments_section__img__avatar {
+      display: -webkit-box;
+      display: flex;
+      width: 100%;
+      height: 100%;
+        }
+    
+    .comments_section__content {
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      opacity: 0; }
+    
+    .comments_section__title {
+      font-family: 'Gagalinregular', Arial, Helvetica, sans-serif;
+      font-size: 0.875rem;
+      font-weight: normal; 
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    
+    .comments_section__text {
+      font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+      font-size: 0.875rem;
+      color: #fff;
+      line-height: 20px;
+      text-align: left; }
+    
+    .comments_section__button {
+      border-radius: 5px;
+      width: 97px;
+      height: 36px;
+      border: none;
+      background-color: #e45028;
+      cursor: pointer;
+      display: -webkit-box;
+      display: flex;
+      font-family: 'Ubuntum', Arial, Helvetica, sans-serif;
+      font-size: 0.81rem;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #2f3234; 
+    }
+
+      .comments_section__button:hover {
+        color: burlywood; 
+      }
+    
+    .pagginator__list {
+      position: fixed;
+      top: 80px;
+      right: 50px; 
+    }
+
+      .pagginator__list .pagginator__item {
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-bottom: 15px;
+        position: relative; 
+      }
+
+        .pagginator__list .pagginator__item:first-child:after {
+          content: "";
+          display: block;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          border: 1px solid #fff;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); 
+      }
